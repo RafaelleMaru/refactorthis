@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RefactorThis.Domain\RefactorThis.Domain.csproj" />
+    <ProjectReference Include="..\RefactorThis.Persistence\RefactorThis.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Payment\" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribue Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>RefactorThis.Tests</_Parameter1>
+		</AssemblyAttribue>
+	</ItemGroup>
+
+</Project>
